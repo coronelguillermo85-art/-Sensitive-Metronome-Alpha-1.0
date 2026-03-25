@@ -60,15 +60,11 @@ A diferencia de los metrónomos estándar, este dispositivo utiliza una interfaz
 ---
 
 ### 📸 Evidencia de Prototipado y Testeo
-<div ![Uploading IMG_20260317_143741825_NV (1).jpg…]()
-">
+<div align="center">
   <p><b>Interfaz de Usuario (Compás y BPM)</b></p>
-  <img src="![Uploading IMG_20260317_143741825_NV (1).jpg…]()
+  <img src="![IMG_20260317_143741825_NV (1)](https://github.com/user-attachments/assets/5fc60db9-ac7b-4e4c-8cf6-182fff29da70)
 ">
-  <br />
-  <p><b>
-  <img 
-</div>
+ 
 
 ---
 
