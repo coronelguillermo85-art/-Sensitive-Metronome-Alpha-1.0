@@ -19,10 +19,10 @@ A diferencia de los metrónomos estándar, este dispositivo utiliza una interfaz
 ---
 
 ### 📸 Prototipo Alpha Funcional
-<div align="center">![IMG_20260317_143741825_NV (1)](https://github.com/user-attachments/assets/616ef1c8-bb20-4b4e-bbda-4aa25439265b)
- <p><b>Interfaz de Usuario (SENSITIVE - 40 BPM)</b></p>
-  <i![IMG_20260317_143741825_NV (1)](https://github.com/user-attachments/assets/c75e823e-8c6e-465a-94ec-e2ccd360c692)
-">
+<div align="center">
+  <p><b>Interfaz de Usuario (SENSITIVE - 40 BPM)</b></p>
+  <img src="![IMG_20260317_143741825_NV (1)](https://github.com/user-attachments/assets/4e8e7d81-8171-4a3f-886c-29b2840d1c6c)
+" width="450" alt="OLED Metronome Sensitive 40 BPM">
   <br />
   <p><i>Vista general del prototipo Alpha 1.0 integrado en protoboard.</i></p>
 </div>
