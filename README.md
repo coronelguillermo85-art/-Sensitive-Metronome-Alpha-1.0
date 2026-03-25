@@ -8,21 +8,31 @@
   <hr />
 
   <p><b>Innovación Mínima | Luthería Digital | Soberanía Tecnológica</b></p>
-  <p>Un proyecto de <b>Guillermo Coronel</b> para el desarrollo de herramientas de proximidad.</p>
+  <p>Un proyecto de <b>Guillermo Coronel</b> enfocado en hardware abierto.</p>
 </div>
 
 ### 📋 Descripción del Proyecto
-El **Sensitive Metronome** es una herramienta de luthería digital de código abierto diseñada para músicos y bandas que requieren una referencia de pulso infalible. Este prototipo, desarrollado bajo el protocolo de investigación de **Sensitive Lab**, resuelve la necesidad de un seguimiento rítmico visual y táctil en entornos de alta exigencia (ensayos, vivo, grabación).
+El **Sensitive Metronome** es una herramienta de luthería digital de código abierto diseñada para músicos que requieren una referencia de pulso infalible. Este prototipo, desarrollado bajo el protocolo de investigación de **Sensitive Lab**, resuelve la necesidad de un seguimiento rítmico visual y táctil en entornos de ensayo y vivo.
 
-A diferencia de los metrónomos estándar, este dispositivo utiliza una interfaz **OLED** de alta lectura para mostrar no solo el tempo, sino también la estructura del **compás en tiempo real**.
+A diferencia de los metrónomos estándar, este dispositivo utiliza una interfaz **OLED** de alta lectura para mostrar no solo el tempo (BPM), sino también la estructura del **compás en tiempo real**.
+
+---
+
+### 📸 Prototipo Alpha Funcional
+<div align="center">
+  <p><b>Interfaz de Usuario (SENSITIVE - 40 BPM)</b></p>
+  <img src="image_10.png" width="450" alt="OLED Metronome Sensitive 40 BPM">
+  <br />
+  <p><i>Vista general del prototipo Alpha 1.0 integrado en protoboard.</i></p>
+</div>
 
 ---
 
 ### 🚀 Funciones Principales
 <ul>
-  <li><b>Control de BPM Dinámico:</b> Ajuste analógico mediante potenciómetro de alta precisión (rango 40-200 BPM).</li>
+  <li><b>Control de BPM Dinámico:</b> Ajuste analógico mediante potenciómetro de precisión (rango 40-200 BPM).</li>
   <li><b>Monitor de Compás Visual:</b> Visualización del tiempo activo (1, 2, 3, 4) en formato gigante para lectura periférica.</li>
-  <li><b>Interfaz Sensitive Custom:</b> Identidad visual del laboratorio integrada en el firmware.</li>
+  <li><b>Identidad Sensitive Custom:</b> Identidad visual del laboratorio integrada directamente en el firmware.</li>
   <li><b>Feedback Dual Sincronizado:</b> Click sonoro diferenciado para el primer tiempo y parpadeo visual.</li>
 </ul>
 
@@ -38,7 +48,7 @@ A diferencia de los metrónomos estándar, este dispositivo utiliza una interfaz
   <tr>
     <td><b>Microcontrolador</b></td>
     <td>Arduino Nano / Uno</td>
-    <td>Procesamiento de lógica rítmica.</td>
+    <td>Procesamiento de la lógica rítmica.</td>
   </tr>
   <tr>
     <td><b>Pantalla</b></td>
@@ -56,15 +66,6 @@ A diferencia de los metrónomos estándar, este dispositivo utiliza una interfaz
     <td>Referencia sonora del pulso.</td>
   </tr>
 </table>
-
----
-
-### 📸 Evidencia de Prototipado y Testeo
-<div align="center">
-  <p><b>Interfaz de Usuario (Compás y BPM)</b></p>
-  <img src="![IMG_20260317_143741825_NV (1)](https://github.com/user-attachments/assets/5fc60db9-ac7b-4e4c-8cf6-182fff29da70)
-">
- 
 
 ---
 
@@ -106,13 +107,13 @@ void loop() {
     lastTime = millis();
     display.clearDisplay();
     
-    // Header
+    // Header SENSITIVE
     display.setTextSize(1);
     display.setTextColor(WHITE);
     display.setCursor(37, 0);
     display.println("SENSITIVE");
     
-    // Compás Gigante
+    // Compás Gigante en el Centro
     display.setTextSize(4);
     display.setCursor(55, 20);
     display.print(beatCount); 
@@ -124,7 +125,7 @@ void loop() {
     display.print(bpm);
     display.display();
 
-    // Sonido diferenciado
+    // Sonido diferenciado (Tono agudo en tiempo 1)
     tone(buzzerPin, (beatCount == 1) ? 1000 : 800, 40);
     
     beatCount = (beatCount >= signature) ? 1 : beatCount + 1;
