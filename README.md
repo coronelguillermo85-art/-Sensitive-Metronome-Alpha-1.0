@@ -62,10 +62,11 @@ A diferencia de los metrónomos estándar, este dispositivo utiliza una interfaz
 ### 📸 Evidencia de Prototipado y Testeo
 <div align="center">
   <p><b>Interfaz de Usuario (Compás y BPM)</b></p>
-  <img src="tu_enlace_aqui" width="450" alt="OLED Metronome">
+  <img src="![Uploading IMG_20260317_143741825_NV (1).jpg…]()
+">
   <br />
-  <p><b>Validación en Entorno Real (Setlist Depeche Mode)</b></p>
-  <img src="tu_enlace_aqui" width="450" alt="Testing Real World">
+  <p><b>
+  <img 
 </div>
 
 ---
