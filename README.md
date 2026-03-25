@@ -19,8 +19,8 @@ A diferencia de los metrónomos estándar, este dispositivo utiliza una interfaz
 ---
 
 ### 📸 Prototipo Alpha Funcional
-<div align="center">
-  <p><b>Interfaz de Usuario (SENSITIVE - 40 BPM)</b></p>
+<div align="center">![IMG_20260317_143741825_NV (1)](https://github.com/user-attachments/assets/616ef1c8-bb20-4b4e-bbda-4aa25439265b)
+ <p><b>Interfaz de Usuario (SENSITIVE - 40 BPM)</b></p>
   <i![IMG_20260317_143741825_NV (1)](https://github.com/user-attachments/assets/c75e823e-8c6e-465a-94ec-e2ccd360c692)
 ">
   <br />
